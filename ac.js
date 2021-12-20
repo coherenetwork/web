@@ -1,6 +1,8 @@
 window.cfields = null;
 window._show_thank_you = function(id, message, trackcmp_url, email) {
   var form = document.getElementById('_form_' ), thank_you = form.querySelector('._form-thank-you');
+  if(!form) form = document.querySelector('._form')[0]; /// just in case we forgot to change the form id
+  
   form.querySelector('._form-content').style.display = 'none';
   thank_you.innerHTML = message;
   thank_you.style.display = 'block';
