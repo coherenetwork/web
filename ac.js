@@ -76,6 +76,8 @@
     var _removed = false;
     var form_to_submit = document.getElementById('_form_');
     if(!form_to_submit) form_to_submit = document.querySelector('._form')[0]; /// just in case we forgot to change the form id
+    console.log('form_to_submit');
+    console.log(form_to_submit);
     var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
 
     var getUrlParam = function(name) {
