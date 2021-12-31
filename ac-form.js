@@ -2,6 +2,7 @@
 Should come at the end of the Body to execute once the form is loaded, which is loaded through their JS function  */
 $(document).ready(function() {
 
+$('.w-embed style').detach(); /// to remove the style tags that AC brings in
 $('form').removeClass();
 /// change the form id to remove the styles
 $("._field-wrapper input[type=text]").addClass('form-input w-input');
