@@ -3,6 +3,7 @@ Should come at the end of the Body to execute once the form is loaded, which is 
 $(document).ready(function() {
 
 $('form').removeClass();
+/// change the form id to remove the styles
 $("._field-wrapper input[type=text]").addClass('form-input w-input');
 $("._field-wrapper textarea").addClass('form-input text-area-input w-input');
 $("._field-wrapper select").addClass('dropdown-list w-select');
